@@ -1,7 +1,36 @@
+version: 1
+maxPreviewsCached: 10
+vaults:
+    -
+        fsPath: ../../../../Users/kevinlin/projects/dendronv2/dendron-template/vault
+useFMTitle: true
+useNoteTitleForLink: true
+noAutoCreateOnDefinition: true
+noLegacyNoteRef: true
+noXVaultWikiLink: true
+lookupConfirmVaultOnCreate: false
+mermaid: true
+useKatex: true
+autoFoldFrontmatter: true
+usePrettyRefs: true
+dev:
+    enablePreviewV2: true
+lookup:
+    note:
+        selectionType: selectionExtract
+journal:
+    dailyDomain: daily
+    name: journal
+    dateFormat: Y.MM.DD
+    addBehavior: childOfDomain
+    firstDayOfWeek: 1
+scratch:
+    name: scratch
+    dateFormat: Y.MM.DD-HHmmss
+    addBehavior: childOfDomainNamespace
 site:
     siteHierarchies:
         - dendron
     siteRootDir: docs
-vaults:
-    -
-        fsPath: /Users/kevinlin/projects/dendronv2/dendron-template/vault
+initializeRemoteVaults: true
+dendronVersion: 0.58.3
